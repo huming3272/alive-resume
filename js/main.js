@@ -19,7 +19,7 @@ function writeCss(prefix, code, fn){
       fn && fn.call()
     }
     
-  }, /*70*/)
+  }, 70)
 }
 function writeMarkdown(markdown, fn){
   let domPaper = document.querySelector('#paper>.content')
