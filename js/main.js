@@ -9,7 +9,8 @@ function writeCss(prefix, code, fn){
     domCode.innerHTML = Prism.highlight(prefix + code.substring(0, n), Prism.languages.css);
     styleTag.innerHTML = prefix +  code.substring(0, n)
     /**/
-    let mySound = new Audio('./sound/key-new-' + getRandomIntInclusive(1, 5) + '.wav').play()
+    let mySound = new Audio('./sound/key-new-' + getRandomIntInclusive(1, 5) + '.wav')
+    mySound.play()
     /**/ 
     domCode.scrollTop = domCode.scrollHeight
     console.log('这是第'+n+'遍')
@@ -18,7 +19,7 @@ function writeCss(prefix, code, fn){
       fn && fn.call()
     }
     
-  }, 70)
+  }, /*70*/)
 }
 function writeMarkdown(markdown, fn){
   let domPaper = document.querySelector('#paper>.content')
@@ -65,7 +66,7 @@ html{
 
 /*加一些3D效果*/
 #code {
-  transform: scale(1,0.6) rotate(-5deg);
+  transform: scale(1,1.2) rotate(-5deg);
 }
 
 
@@ -124,9 +125,10 @@ let css3 = `
  * 谢谢观看
  */
 `
-!(function (){
+!(function () {
   alert("你好，本次将占用您一点时间大约1分15秒")
 }).call()
+
 writeCss('', css1, ()=>{ // writeCss call the function
   createPaper(() => {
     writeMarkdown(md, ()=> {
@@ -140,6 +142,9 @@ writeCss('', css1, ()=>{ // writeCss call the function
     })
   })
 })
+
+
+
 
 
 
