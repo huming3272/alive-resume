@@ -110,8 +110,11 @@ var md = `
 
 # 项目介绍
 
-1.[苹果风格轮播](https://huming3272.github.io/Apple_slide-demo/demo.html)
-2.[canvas画板](https://huming3272.github.io/canvas-demo/index.html)
+<html>
+  <a href = "https://huming3272.github.io/Apple_slide-demo/demo.html" target = "_blank" > 1. 苹果风格轮播 </a><br/>
+  <a href = "https://huming3272.github.io/canvas-demo/index.html" target = "_blank" > 2. canvas画板 </a><br/>
+  <a href ="https://huming3272.github.io/keyboard-nav/index.html" target ="_blank"> 3. 键盘导航 </a>
+</html>
 
 # 联系方式
 
@@ -127,7 +130,7 @@ let css3 = `
 `
 !(function () {
   alert("你好，本次将占用您一点时间大约1分15秒")
-}).call()
+}).call() 
 
 writeCss('', css1, ()=>{ // writeCss call the function
   createPaper(() => {
