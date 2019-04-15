@@ -113,7 +113,9 @@ var md = `
 <html>
   <a href = "https://huming3272.github.io/Apple_slide-demo/demo.html" target = "_blank" > 1. 苹果风格轮播 </a><br/>
   <a href = "https://huming3272.github.io/canvas-demo/index.html" target = "_blank" > 2. canvas画板 </a><br/>
-  <a href ="https://huming3272.github.io/keyboard-nav/index.html" target ="_blank"> 3. 键盘导航 </a>
+  <a href = "https://huming3272.github.io/keyboard-nav/index.html" target ="_blank"> 3. 键盘导航 </a><br/>
+  <a href = "https://huming3272.github.io/Pikachu-with-css/index.html" target ="_blank"> 4. 用css做一只皮卡丘 </a><br/>
+  
 </html>
 
 # 联系方式
